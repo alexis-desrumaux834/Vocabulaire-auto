@@ -308,7 +308,7 @@ const Home = (props: Props): JSX.Element => {
 
     for (let i = 0; i != 5; i += 1) {
       rows.push(
-        <Styled.RecurrenceSelectOption value={i}>
+        <Styled.RecurrenceSelectOption value={i} key={i}>
           {i}
         </Styled.RecurrenceSelectOption>,
       )

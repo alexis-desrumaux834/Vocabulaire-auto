@@ -5,11 +5,20 @@ import { Button, Table, Input, Form, Divider, Select } from 'antd';
 export const Banner = styled.div`
   width: 100%;
   height: 100px;
-  background-color: #ff9626;
+  background-color: #32a852;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+`;
+
+export const BannerButton = styled.button`
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
 `;
 
 export const BannerTitle = styled.div`
@@ -31,9 +40,9 @@ export const Start = styled.div`
 `;
 
 export const StartButton = styled(Button)`
-  width: 200px;
+  width: 300px;
   height: 100px;
-  font-size: 22px;
+  font-size: 32px;
   border-radius: 10px;
 `;
 

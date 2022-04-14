@@ -383,7 +383,7 @@ const Home = (props: Props): JSX.Element => {
             <Styled.VocabularyTable
               columns={getColumns(handleOnClickDeleteButton)}
               dataSource={getVocabularyData()}
-              pagination={{defaultPageSize:10}}
+              pagination={{ defaultPageSize: 10 }}
               rowSelection={{
                 type: 'checkbox',
                 ...getRowSelection(handleOnChangeRowSelection),
@@ -399,7 +399,9 @@ const Home = (props: Props): JSX.Element => {
   return (
     <>
       <Styled.Banner>
-        <Styled.BannerTitle>Vocabulaire</Styled.BannerTitle>
+        <Styled.BannerButton onClick={() => window.location.reload()}>
+          <Styled.BannerTitle>Vocabulaire</Styled.BannerTitle>
+        </Styled.BannerButton>
       </Styled.Banner>
       {display()}
     </>

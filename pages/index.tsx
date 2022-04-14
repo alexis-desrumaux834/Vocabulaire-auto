@@ -383,6 +383,7 @@ const Home = (props: Props): JSX.Element => {
             <Styled.VocabularyTable
               columns={getColumns(handleOnClickDeleteButton)}
               dataSource={getVocabularyData()}
+              pagination={{defaultPageSize:10}}
               rowSelection={{
                 type: 'checkbox',
                 ...getRowSelection(handleOnChangeRowSelection),

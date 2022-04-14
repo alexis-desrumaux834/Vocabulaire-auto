@@ -27,7 +27,7 @@ export const getColumns = (deleteFunction: (index: number) => void) => {
       key: 'delete',
       render: (row: VocabularyRow, record: any, index: number) => {
         return (
-          <DeleteButtonRow danger onClick={() => deleteFunction(index)}>
+          <DeleteButtonRow danger onClick={() => deleteFunction(parseInt(row.key))}>
             Delete
           </DeleteButtonRow>
         )

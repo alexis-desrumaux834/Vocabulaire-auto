@@ -6,10 +6,11 @@ Application en Next.JS permettant de réviser du vocabulaire dans le langage vou
 
 ### Installation
 
-- npm run dev (npm run start n'est pas encore disponible à ce jour, mise à jour prochaine)
+- npm install
 
 ## Démarrage
 
+- npm run dev (npm run start n'est pas encore disponible à ce jour, mise à jour prochaine)
 - Se rendre sur localhost:3000
 
 ## Fabriqué avec
